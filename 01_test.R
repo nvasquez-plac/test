@@ -6,7 +6,7 @@
 # Contacto: Nico
 # COn la colaboracion de Kathy, Cata, y Rui
 # Add Mexican Team
-#
+# My name is luisarmando
 # ------------------------------------------------------------------------------
 
 # Proposed changes:
@@ -18,10 +18,10 @@
 library("ggplot2")
 
 # Hardcoded parameters ---------------------------------------------------------
-a <- 2.0      # amplitude
+a <- 3.0      # amplitude
 b <- 0.5      # frequency
 c <- 0.1      # exponential decay rate
-d <- 1.0      # vertical offset
+d <- 1.5      # vertical offset
 
 # x values ---------------------------------------------------------------------
 xmin <- 0
@@ -36,7 +36,7 @@ df <- data.frame(x = x, y = y)
 # Plot -------------------------------------------------------------------------
 p <- ggplot(df, aes(x = x, y = y)) +
         geom_hline(yintercept = d, linetype = "dashed", colour = "grey50") +
-        geom_line(colour = "red", linewidth = 1) +
+        geom_line(colour = "blue", linewidth = 1) +
         labs(title = "y = a * sin(b * x) * exp(-c * x) + d",
             x = "x_V2",
             y = "y_V2") +
