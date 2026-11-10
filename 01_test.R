@@ -25,7 +25,7 @@ d <- 1.5      # vertical offset
 
 # x values ---------------------------------------------------------------------
 xmin <- 0
-xmax <- 20
+xmax <- 30
 x <- seq(from = xmin, to = xmax, by = 0.1)
 
 # Arbitrary function: damped sine wave -----------------------------------------
